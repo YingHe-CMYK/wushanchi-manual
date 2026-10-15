@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>五山池黄酒 · 抖音内容手册 v3</title>
+<style>
+  :root{
+    --ink:#2a2018; --amber:#b8791f; --amber-d:#8a5a14; --rice:#f6efe3;
+    --card:#fffdf8; --line:#e7dcc8; --green:#2f5d3a; --mut:#8a7c66; --ph:#fff3d6;
+    --blue:#2f5d8a; --red:#a8412f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--ink);background:var(--rice);line-height:1.78;-webkit-print-color-adjust:exact}
+  .wrap{max-width:960px;margin:0 auto;padding:18px 16px 70px}
+  header{background:linear-gradient(135deg,#3d2b1f,#6b4a2a);color:#fff;border-radius:16px;
+    padding:22px 20px;margin-bottom:16px;box-shadow:0 6px 20px rgba(60,40,20,.18)}
+  header h1{margin:0 0 6px;font-size:21px;letter-spacing:.5px}
+  header p{margin:4px 0;font-size:12.5px;opacity:.92}
+  .pill{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+    border-radius:20px;padding:2px 10px;font-size:11.5px;margin:6px 6px 0 0}
+  h2{font-size:18px;margin:32px 0 12px;padding-left:11px;border-left:5px solid var(--amber);color:var(--amber-d)}
+  h3{font-size:15.5px;margin:18px 0 6px;color:var(--green)}
+  h4{font-size:14.5px;margin:14px 0 6px;color:var(--amber-d);font-weight:800}
+  .lead{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:13.5px;margin:10px 0}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:12px 0}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:11px 8px;text-align:center}
+  .stat b{display:block;font-size:18px;color:var(--amber-d);line-height:1.2}
+  .stat span{font-size:11px;color:var(--mut)}
+  .src{font-size:11.5px;color:var(--mut);background:#f3efe6;border:1px dashed var(--line);
+    border-radius:8px;padding:7px 11px;margin:8px 0}
+  .src b{color:var(--green)}
+  table.ov{width:100%;border-collapse:collapse;margin:10px 0;font-size:12.5px;background:#fff;
+    border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  table.ov th{background:#3d2b1f;color:#fff;padding:7px 9px;text-align:left;font-weight:700}
+  table.ov td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.ov tr:nth-child(even) td{background:#faf6ee}
+  .kbox{background:#eef4fb;border-left:4px solid var(--blue);border-radius:8px;padding:9px 12px;
+    font-size:13px;color:#274059;margin:10px 0}
+  .kbox b{color:var(--blue)}
+  details.script{background:var(--card);border:1px solid var(--line);border-radius:13px;
+    margin:14px 0;overflow:hidden;box-shadow:0 2px 7px rgba(80,55,25,.05)}
+  details.script>summary{list-style:none;cursor:pointer;padding:13px 15px;background:#fbf4e8;
+    border-bottom:1px solid var(--line);font-weight:800;font-size:15px;color:var(--ink);
+    display:flex;align-items:center;gap:10px}
+  details.script>summary::-webkit-details-marker{display:none}
+  details.script>summary .ar{color:var(--amber);font-weight:900;transition:transform .2s}
+  details.script[open]>summary .ar{transform:rotate(90deg)}
+  details.script>summary .tm{margin-left:auto;font-size:12px;color:var(--mut);font-weight:600}
+  .body{padding:6px 15px 16px}
+  .sell{background:#f3f8f1;border-left:4px solid var(--green);border-radius:8px;padding:9px 12px;
+    font-size:13.5px;margin:10px 0}
+  .hook{background:#fff6e6;border:1px solid #f0d9a8;border-radius:8px;padding:9px 12px;font-size:13.5px;margin:9px 0}
+  .hook b{color:var(--red)}
+  .gold{background:#fbf0e2;border-left:4px solid var(--amber);border-radius:8px;padding:9px 12px;
+    font-size:14px;color:var(--amber-d);font-weight:700;margin:9px 0}
+  .cov{font-size:12.5px;color:#3a3026;background:#f3efe6;border-radius:8px;padding:8px 11px;margin:9px 0}
+  .cov b{color:var(--green)}
+  .spec{background:#fbf7ef;border:1px dashed #e0d3ba;border-radius:9px;padding:8px 12px;
+    font-size:12.5px;color:#3a3026;margin:9px 0}
+  .spec b{color:var(--amber-d)}
+  .copy{font-size:14.8px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px 17px;margin:10px 0}
+  .copy p{margin:12px 0}
+  .copy .sd{color:var(--mut);font-size:12px;display:block;margin:0 0 3px;font-weight:600}
+  .copy .sp{color:var(--red);font-size:12px;display:block;margin:4px 0 0;font-weight:600}
+  .plan{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:11px 0}
+  .plan div{background:#faf6ee;border:1px solid var(--line);border-radius:9px;padding:9px 11px;font-size:12.5px}
+  .plan b{color:var(--amber-d);display:block;margin-bottom:3px;font-size:12px}
+  table.shot{width:100%;border-collapse:collapse;margin:10px 0;font-size:12px;background:#fff;
+    border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  table.shot th{background:#6b4a2a;color:#fff;padding:6px 8px;text-align:left;font-weight:700}
+  table.shot td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.shot tr:nth-child(even) td{background:#faf6ee}
+  .ph{background:var(--ph);border:1px solid #f0d98a !important}
+  .ph td{color:#8a6a14 !important;font-style:normal}
+  mark{background:#fff3d6;color:#8a6a14;padding:0 2px;border-radius:3px}
+  footer{margin-top:30px;padding-top:13px;border-top:1px solid var(--line);font-size:11.5px;color:var(--mut);text-align:center}
+  .prep{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+  .prep .c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 13px}
+  .prep .c h4{margin:0 0 7px;color:var(--amber-d)}
+  .prep .c ul{margin:0;padding-left:18px;font-size:12.5px;color:#3a3026}
+  .prep .c ul li{margin:4px 0}
+  .chk{font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin:9px 0}
+  .chk b{color:var(--green)}
+  .chk .it{display:inline-block;width:16px;height:16px;border:1.5px solid var(--mut);border-radius:4px;
+    margin-right:7px;vertical-align:-3px}
+  .mat{width:100%;border-collapse:collapse;margin:9px 0 14px;font-size:12.5px;background:#fff;
+    border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .mat th{background:#3d2b1f;color:#fff;padding:7px 9px;text-align:left;font-weight:700}
+  .mat td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+  .mat tr:last-child td{border-bottom:none}
+  .mat tr:nth-child(even) td{background:#faf6ee}
+  .mat .cb{width:22px;text-align:center;font-size:16px;color:var(--mut);user-select:none}
+  .mat .seq{width:30px;text-align:center;color:var(--green);font-weight:800}
+  .mat .mv{color:var(--blue);font-weight:600}
+  .mat .dur{color:var(--amber-d);font-weight:800;white-space:nowrap;text-align:center}
+  .mat .it{display:inline-block;width:14px;height:14px;border:1.5px solid var(--mut);border-radius:3px;
+    margin-right:6px;vertical-align:-2px}
+  .cat-h{display:flex;align-items:center;gap:8px;margin:16px 0 2px;font-size:14.5px;font-weight:800;color:var(--amber-d)}
+  .cat-h .em{font-size:18px}
+  .bm{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 15px;margin:13px 0;
+    box-shadow:0 2px 7px rgba(80,55,25,.05)}
+  .bm .bh{display:flex;align-items:center;gap:9px;font-weight:800;font-size:15.5px;color:var(--ink)}
+  .bm .bh .n{background:var(--red);color:#fff;border-radius:9px;min-width:30px;height:30px;
+    display:flex;align-items:center;justify-content:center;font-size:13px}
+  .bm .res{background:#f3f8f1;border-left:4px solid var(--green);border-radius:8px;padding:8px 11px;font-size:13px;margin:9px 0}
+  .bm .res b{color:var(--green)}
+  .bm .lx{background:#fbf0e2;border-left:4px solid var(--amber);border-radius:8px;padding:8px 11px;font-size:13px;margin:9px 0}
+  .bm .lx b{color:var(--amber-d)}
+  table.bmt{width:100%;border-collapse:collapse;margin:9px 0;font-size:12.5px;background:#fff;
+    border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  table.bmt th{background:#6b4a2a;color:#fff;padding:6px 8px;text-align:left;font-weight:700}
+  table.bmt td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.bmt tr:nth-child(even) td{background:#faf6ee}
+
+  table.tl{width:100%;border-collapse:collapse;margin:10px 0;font-size:12px;background:#fff;
+    border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  table.tl th{background:#6b4a2a;color:#fff;padding:6px 8px;text-align:left;font-weight:700}
+  table.tl td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.tl tr:nth-child(even) td{background:#faf6ee}
+  table.tl .t{color:var(--amber-d);font-weight:800;white-space:nowrap}
+  .vok{color:#2f7d4f;font-weight:800}
+  .vre{color:#b8791f;font-weight:800}
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+  .meta div{background:#faf6ee;border:1px solid var(--line);border-radius:9px;padding:8px 10px;font-size:12px}
+  .meta b{color:var(--amber-d);display:block;margin-bottom:2px;font-size:11.5px}
+  .film{background:#eef4fb;border-left:4px solid var(--blue);border-radius:8px;padding:11px 13px;margin:10px 0;font-size:12.5px;color:#274059}
+  .film p{margin:5px 0}
+  .film b{color:var(--blue)}
+
+
+  @page{size:A4;margin:9mm 8mm}
+  @media print{
+    body{background:#fff;line-height:1.45}
+    .wrap{max-width:none;padding:0}
+    header{border-radius:0;box-shadow:none;padding:13px 14px}
+    header h1{font-size:17px}
+    h2{font-size:14.5px;margin:14px 0 7px;page-break-after:avoid}
+    h3{font-size:12.5px;margin:11px 0 4px;page-break-after:avoid}
+    h4{font-size:11.5px;margin:8px 0 3px;page-break-after:avoid}
+    .lead{font-size:10.5px;padding:7px 9px;margin:6px 0}
+    .stats{gap:6px;margin:7px 0}
+    .stat b{font-size:14px}
+    .stat span{font-size:9.5px}
+    .src{font-size:9.5px;padding:5px 8px}
+    table.ov,table.mat,table.shot,table.tl,table.bmt{font-size:9.5px;margin:6px 0}
+    table.ov th,table.mat th,table.shot th,table.tl th,table.bmt th{padding:4px 5px}
+    table.ov td,table.mat td,table.shot td,table.tl td,table.bmt td{padding:4px 5px}
+    tr{page-break-inside:avoid}
+    .kbox,.sell,.hook,.gold,.cov,.chk,.film{font-size:10px;padding:6px 9px;margin:6px 0}
+    .spec{font-size:10px;padding:6px 9px;margin:6px 0}
+    .copy{font-size:11px;padding:9px 10px;margin:6px 0}
+    .copy p{margin:6px 0}
+    details.script{page-break-inside:auto;box-shadow:none;margin:9px 0}
+    details.script>summary{padding:7px 10px;font-size:12px}
+    details.script>summary{page-break-after:avoid}
+    .body{padding:4px 10px 9px}
+    .plan,.meta{gap:5px;margin:6px 0}
+    .plan div,.meta div{font-size:9.5px;padding:5px 7px}
+    .prep{gap:6px;margin:7px 0}
+    .prep .c{padding:8px 9px;page-break-inside:avoid}
+    .prep .c ul{font-size:9.5px}
+    .mat .cb,.mat .it{display:none}
+    a{color:inherit;text-decoration:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>五山池黄酒 · 抖音内容手册 <span style="font-size:14px;opacity:.75">（剧本重写版 v3）</span></h1>
+  <p>第一章调研与第二章拍摄清单保留不变；第三章 11 条剧本按全网爆款调研二次重写（3×15×3 结构）｜ 2026-10-16</p>
+  <div>
+    <span class="pill">边讲边展示</span>
+    <span class="pill">不踩地域 · 不编故事</span>
+    <span class="pill">真人厂主口气</span>
+    <span class="pill">秒数可照拍</span>
+  </div>
+</header>
+
+<h2>一、账号调研（五山池 · 抖音）</h2>
+
+<div class="stats">
+  <div class="stat"><b>1.4 万+</b><span>抖音酒类小店（2024）</span></div>
+  <div class="stat"><b>155.6 万</b><span>全年酒类直播场次</span></div>
+  <div class="stat"><b>944</b><span>我们账号粉丝</span></div>
+  <div class="stat"><b>四十年</b><span>厂龄（主页简介自述）</span></div>
+</div>
+
+<h3>1.1 抖音酒类账号的分布与现状（9 类）</h3>
+<div class="lead">抖音上卖酒的账号，按<b>主体是谁</b>可以分成 9 类。这 9 类并不是九个格子各占一成——真正决定我们能不能活下来的，是<b>我们站得进哪一类，那一类还剩多少空位</b>。</div>
+<table class="ov">
+  <tr><th>账号类型</th><th>内容形态</th><th>公开量级与表现</th></tr>
+  <tr><td><b>1 · 品牌官方旗舰店自播号</b></td><td>产品片、工艺讲解、大促长时段直播</td><td>店铺销售占比 <b>20.0% → 23.1%</b>（2023Q2→2024Q2），在涨。但 2024 前三季度酒类直播销售额里，品牌自播只占约 <b>17%</b>，达人拿走 <b>83%</b>——官号有信任、没流量</td></tr>
+  <tr><td><b>2 · 品牌专卖店 / 专营店矩阵号</b></td><td>多品牌货架式经营 ＋ 达人分销走量</td><td>专营店销售占比 <b>51.6% → 57.0%</b>，是抖音酒类里最大的一块。做的是品牌授权 ＋ 精选货盘的生意，不生产内容，靠授权和货吃饭</td></tr>
+  <tr><td><b>3 · 明星与头部 KOL</b></td><td>专场直播、名人背书、片场式内容</td><td>合作人次极少但单产最高。以国台 2024Q2 的达人矩阵为例：明星仅占 <b>1%</b> 人次、头部达人占 <b>3%</b> 人次，人均 GMV 却分别达 <b>80.2 万 / 111.0 万</b>，是腰部的 2 倍以上</td></tr>
+  <tr><td><b>4 · 腰部达人</b></td><td>垂直测评、开箱、场景化讲解</td><td>国台矩阵里占 <b>10%</b> 人次，人均贡献 <b>50.2 万</b>，是性价比最好的一档。但看大盘，<b>腰部与尾部达人的占比正在下降</b>——流量在往头部和品牌自播收</td></tr>
+  <tr><td><b>5 · 尾部达人 / 素人带货号</b></td><td>短视频挂车、口播讲品、日更铺量</td><td>人数最多的一档：国台合作的 <b>84%</b> 人次是尾部达人，人均 GMV 只有 <b>2.4 万</b>。数量红利基本吃完，纯铺量很难再起量</td></tr>
+  <tr><td><b>6 · 酒类零售连锁 / 渠道商号</b></td><td>卖场式直播、比价、囤货、名酒引流</td><td>酒仙网、小酒窝这类连锁，手握授权和货盘，单抖音渠道年销可做到亿级。优势是价格和保真，<b>劣势是讲不了产品故事</b>——因为他们不酿酒</td></tr>
+  <tr><td><b>7 · 产地工厂 / 酒厂老板真人 IP</b></td><td>边走边讲、车间串门、现场答疑、开缸开坛</td><td><b>起量最快的一类，也是目前最缺位的一类。</b>特征是真人出镜、现场说话、把生产过程直接摆到镜头前。农产品与食品赛道靠这个打法跑出来的账号最多</td></tr>
+  <tr><td><b>8 · 经销商 / 烟酒店线上化账号（C 店）</b></td><td>老店转线上、熟客生意、本地同城</td><td>C 店销售占比从 <b>21.0% 掉到 13.9%</b>。2024 年 2 月抖音把酒类店铺保证金从 2 万提到 <b>15 万</b>，直接让约 <b>20%–30%</b> 的小酒类店关门——个人小店这条路，门槛已经抬得很高</td></tr>
+  <tr><td><b>9 · 跨界内容达人种草</b></td><td>把酒放进文化、美食、生活方式里讲</td><td>国台合作的 687 位达人里，<b>生活类与美食类占比最大</b>。他们先讲品类、后讲产品，产品常常到后半段才出现——消费者是先被内容说服，才被产品转化</td></tr>
+</table>
+
+<h4>这 9 类脚下的大盘，是这么几个数</h4>
+<table class="ov">
+  <tr><th>大盘指标</th><th>2024 年公开数据</th></tr>
+  <tr><td><b>小店 / 品牌 / 直播 / 视频</b></td><td>酒类行业小店 <b>超 1.4 万家</b>；品牌推广总数 <b>超 1.25 万个</b>；全年直播 <b>155.6 万场</b>；年带货视频 <b>超 154 万条</b></td></tr>
+  <tr><td><b>增速</b></td><td>2022–2024 抖音酒水市场规模复合年增长率 <b>59%</b>；2024 年 GMV 同比 <b>＋30%</b>；2025 年 9 月酒水销售热度环比 <b>＋58%</b>、同比 <b>＋41%</b></td></tr>
+  <tr><td><b>品类结构</b></td><td>白酒占酒类销售额 <b>超 80%</b>，黄酒、米酒等小品类合起来不足两成——<b>这既是我们的机会空间，也是我们的天花板</b></td></tr>
+  <tr><td><b>价格带</b></td><td><b>98–488 元</b>区间销售额占比约 <b>30%</b>，最能走量；50–150 元单瓶与 200–400 元礼盒是两个主力档</td></tr>
+  <tr><td><b>人群</b></td><td>消费者中 <b>31–40 岁占 37.7%</b>、<b>18–30 岁占 34.9%</b>；女性占比一年内从 <b>20.1%</b> 涨到 <b>38.7%</b></td></tr>
+  <tr><td><b>集中度</b></td><td>抖快酒类品牌 CR5 仅 <b>31.23%</b>、CR10 仅 <b>38.19%</b>——集中度远低于线下，<b>新品牌还有位置</b></td></tr>
+</table>
+
+<h4>两年的规则变化，直接决定我们该做哪一类</h4>
+<table class="ov">
+  <tr><th>变化</th><th>发生了什么</th><th>对我们的意义</th></tr>
+  <tr><td><b>流量指标换了</b></td><td>2024 年 5 月起，抖音酒类流量分配的关键指标从「密集成交」转向「<b>停留时长</b>」，头部达播被降权、品牌自播获扶持</td><td>不再拼谁喊得凶、谁价格低，拼的是<b>观众愿意在你这儿待多久</b>。厂区实景、开缸开坛这类画面天生留人</td></tr>
+  <tr><td><b>门槛抬了</b></td><td>2024 年 2 月酒类店铺保证金 2 万 → <b>15 万</b>，约 20%–30% 的小店关停；4 月出台 15 条直播新规，管过度宣传与价格违规</td><td>靠低质铺量的号在退场。<b>有厂、有资质、有真实产地的账号，反而被清出了空间</b></td></tr>
+  <tr><td><b>消费者变了</b></td><td>保真需求上升，购买向「有酒企授权资质」的官方店集中，C 店占比从 21.0% 掉到 13.9%</td><td>消费者愿意为「看得见的真」付钱。我们把米、水、缸、坛、老师傅拍出来，正好对上这个需求</td></tr>
+</table>
+<div class="src"><b>数据来源：</b>云酒头条 × 飞瓜数据《2024 年抖音平台酒类行业报告》；飞瓜数据《2024 年 Q2 抖音酒类洞察报告》；方正证券《白酒Ⅱ行业专题报告》（2025-03）；太平洋证券酒类电商行业研报；飞瓜数据《2025 年 9 月抖音电商营销月报》。</div>
+<div class="kbox"><b>这一节对我们只有一句话：</b>这 9 类里，第 1、2、6 类要资质和资金，第 3、4、5 类要花钱买流量，第 8 类已经关掉了大半扇门。<b>我们唯一不花钱就能站进去的，是第 7 类——产地工厂真人 IP，再叠加第 9 类的内容讲法。</b>空位不是「没人做黄酒」，而是「没有一家西北黄酒厂，把自己真实的生产现场摆到镜头前面」。</div>
+
+<h3>1.2 我们这个账号的现状（按主页实录）</h3>
+<table class="ov">
+  <tr><th>项目</th><th>实际情况</th><th>说明</th></tr>
+  <tr><td><b>账号名</b></td><td>甘肃五山池酒业销售有限公司 · 企业店（店铺账号，带蓝 V）</td><td>主体是<b>销售公司的企业店铺号</b>，不是老板个人号——所以更需要靠内容把人拉进来，不能指望「熟人关注」</td></tr>
+  <tr><td><b>粉丝 / 获赞 / 作品</b></td><td><b>944</b> 粉丝 · <b>765</b> 获赞 · <b>50</b> 条作品 · 关注 59</td><td>50 条作品平均单条约 15 个赞：还在冷启动，没有一条跑出来。反过来看也是好事——没有历史包袱，可以重新定调</td></tr>
+  <tr><td><b>店铺与直播</b></td><td>店铺在售 <b>5 件好物</b>；账号已具备直播能力（截图时正在直播）</td><td>成交入口和开播能力都已经有了，缺的只有一样：内容把流量引过来</td></tr>
+  <tr><td><b>IP / 主营</b></td><td>IP 甘肃；主打大黄米黄酒</td><td>主页明示三样：非遗酿酒工艺 ＋ 大黄米 ＋ 山泉水</td></tr>
+  <tr><td><b>主页简介（原话）</b></td><td>「四十年起起伏伏，坚持做有良心的好黄酒；再不跟上时代，就真的要 被时代彻底抛弃；希望喜欢黄酒喜欢西北的朋友点个关注；非遗酿酒工艺＋大黄米＋山泉水＝一杯独具西北特色的好酒」</td><td>这就是账号现在的自我定位。<b>四十年、非遗工艺、大黄米、山泉水</b>——这四个词都是真素材，后面全都要用上</td></tr>
+  <tr><td><b>已有可拍资产</b></td><td>厂区门楼（招牌大字）、车间、酒库、水源、老师傅、品鉴馆</td><td>别家花钱搭景，我们抬手就有</td></tr>
+  <tr><td><b>最大短板</b></td><td>品类认知几乎是空的，加上 50 条作品还没定下调子</td><td>多数人不知道甘肃产黄酒；观众看完没记住一句话。这不只是量的问题，是「说哪一句」的问题</td></tr>
+</table>
+
+<h3>1.3 谁在做、在做什么形态</h3>
+<div class="lead">1.1 是抖音整个酒类生态的横切面。缩小到<b>黄酒这个圈子里</b>，现在台上的是这几拨人。</div>
+<table class="ov">
+  <tr><th>谁在做</th><th>他们在做什么</th><th>留给我们的位置</th></tr>
+  <tr><td><b>江南头部黄酒品牌官号</b></td><td>节气、诗酒、国潮联名、酒库实景直播——画面考究，主打「文化感」</td><td>他们把「黄酒 ＝ 江南」这个印象做深了。我们不去争谁来代表黄酒，只说明另一件事：<b>黄酒还有一条大黄米的路</b></td></tr>
+  <tr><td><b>黄酒产地的文旅号 / 地方号</b></td><td>古镇、水乡、酿坊一条街，讲风土与历史</td><td>胜在有场景，弱在不是「从我们厂里发出来的」——观众分不清谁是真在酿</td></tr>
+  <tr><td><b>酒类垂直测评号</b></td><td>横向评测、口味对比、价位段推荐</td><td>他们会把黄酒和白酒、料酒放一起比，正好替我们回答「黄酒到底是什么」——但结论不站在我们这边，得我们自己去讲</td></tr>
+  <tr><td><b>产地农产 / 食品老板 IP</b></td><td>真人出镜、边走边讲、产地直发，已经跑成型</td><td><b>这是最该学的形态。</b>西北的果、肉、蜜都有老板号在跑，黄酒这一格还空着</td></tr>
+  <tr><td><b>西北本地生活号</b></td><td>甘肃美食、面食、农牧内容，流量不小</td><td>他们证明了一件事：<b>西北题材在抖音有人看</b>。缺的是把黄酒接进去的那一环——那一环就是我们</td></tr>
+</table>
+<div class="kbox"><b>结论：</b>黄酒不是没人做，是<b>做的人全在江南</b>。西北这条线上，抖音还没有一家成型的黄酒厂账号。这个空位不是我们抢来的，是它本来就空着——<b>谁先把镜头架进厂里，谁就先被记住</b>。</div>
+
+<h3>1.4 账号定位结论</h3>
+<table class="ov">
+  <tr><th>定位项</th><th>结论</th></tr>
+  <tr><td><b>我们是谁</b></td><td><b>甘肃五山池 · 用大黄米酿酒的西北黄酒厂</b>——不是「另一个产地的黄酒」，是另一条原料路线</td></tr>
+  <tr><td><b>出镜主体</b></td><td>厂里人：老板 / 老师傅，边走边讲，不用官号口吻</td></tr>
+  <tr><td><b>内容主轴</b></td><td>真实生产现场（米、水、酿、存）＋ 真实喝法（温一壶配硬菜）</td></tr>
+  <tr><td><b>唯一记忆点</b></td><td><b>甘肃也有黄酒，是大黄米酿的</b>——一句话就能说清的差异</td></tr>
+  <tr><td><b>不做什么</b></td><td>不踩地域、不跟任何产地比高低、不编故事、不喊口号</td></tr>
+  <tr><td><b>信任怎么建</b></td><td>把「看得见的证据」拍出来：米、水、缸、坛、年份、人</td></tr>
+  <tr><td><b>账号形态</b></td><td>现在是<b>企业店铺号</b>，发的是店铺视角的内容。建议<b>主线改成真人出镜</b>——老板、师傅、店员都行，同号发布，店铺继续接成交</td></tr>
+  <tr><td><b>主页简介怎么改</b></td><td>第一句换成能被记住的那句：<b>「甘肃也有黄酒，是大黄米酿的」</b>；后面再补四十年、非遗工艺、山泉水。原来那句「被时代彻底抛弃」太丧，别放在最显眼的位置</td></tr>
+  <tr><td><b>账号名</b></td><td>账号名已经是公司全称，用户记不住。建议保留主体，昵称里加一句能被搜索到的：<b>五山池黄酒 · 甘肃大黄米黄酒</b></td></tr>
+</table>
+
+
+<h2>二、明天到厂 · 拍摄素材与准备内容清单</h2>
+<div class="lead">这一章是给<strong>拍摄当天</strong>用的生产清单。脚本里那些方括号 [ ]（厂名年限、师傅姓名、水源名、款名度数等）不用提前填好——到厂后向厂方问清、口播时直接说就行。<b>本节只列"要拍什么、要准备什么"</b>，到厂照着打钩。</div>
+
+<h3>2.1 拍摄素材总清单（按类型打钩 · 含时长与机位运动方向）</h3>
+<div class="lead">到厂照下面 6 类勾拍。<b>「怎么拍」列</b>写清机位运动方向：<b>横移·左→右</b>＝镜头平行扫过；<b>从上到下</b>＝俯拍压下或自上而下；<b>从下到上</b>＝仰拍升起；<b>推近</b>＝由远及近；<b>固定</b>＝机位不动。<b>「时长」</b>是这条素材建议保留的净时长，剪辑时按脚本节奏取舍。</div>
+
+<div class="cat-h"><span class="em">📹</span> 一、米相关（主要服务 #1 / #3 / #7 / #11）</div>
+<table class="mat">
+  <tr><th class="cb">☐</th><th class="seq">序</th><th>素材项（拍什么）</th><th>怎么拍（机位运动方向）</th><th class="dur">时长</th></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">1</td><td>大黄米堆特写（颗粒金黄、逆光）</td><td class="mv">俯拍→特写推近：镜头从上压到米堆，再推进看颗粒</td><td class="dur">5–8s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">2</td><td>出镜人蹲地抓米对光</td><td class="mv">固定中景＋手部特写，视线从手移到脸</td><td class="dur">6–10s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">3</td><td>筛出的次品堆（瘪粒/石子/霉点）</td><td class="mv">从上到下俯拍堆，再特写单颗</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">4</td><td>挑米师傅眼部/手部特写</td><td class="mv">从左到右扫过手部拣米动作</td><td class="dur">5–8s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">5</td><td>米倒进竹筐</td><td class="mv">固定侧拍，捕捉米落下过程</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">6</td><td>一碗黄米 vs 一碗糯米并排</td><td class="mv">从左到右两碗对比，各推近</td><td class="dur">6–10s</td></tr>
+</table>
+
+<div class="cat-h"><span class="em">💧</span> 二、水相关（主要服务 #3 / #5 / #11）</div>
+<table class="mat">
+  <tr><th class="cb">☐</th><th class="seq">序</th><th>素材项（拍什么）</th><th>怎么拍（机位运动方向）</th><th class="dur">时长</th></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">1</td><td>水源环境空镜（山/泉/渠）</td><td class="mv">横移·左→右展环境</td><td class="dur">5–8s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">2</td><td>出镜人捧水对光</td><td class="mv">固定特写水碗对光，手微晃</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">3</td><td>尝水点头</td><td class="mv">固定中近景</td><td class="dur">3–5s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">4</td><td>水碗与米碗并排石台</td><td class="mv">从上到下（先米后水）点指</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">5</td><td>一碗水 vs 自来水对比（可选）</td><td class="mv">从左到右两碗对比</td><td class="dur">4–6s</td></tr>
+</table>
+
+<div class="cat-h"><span class="em">🏭</span> 三、车间七步（主要服务 #4 / #11）</div>
+<table class="mat">
+  <tr><th class="cb">☐</th><th class="seq">序</th><th>素材项（拍什么）</th><th>怎么拍（机位运动方向）</th><th class="dur">时长</th></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">1</td><td>浸米池</td><td class="mv">俯拍池面，横移·左→右</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">2</td><td>蒸饭热气</td><td class="mv">低角度仰拍蒸汽升腾（从下到上）</td><td class="dur">3–5s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">3</td><td>趁温拌曲（[曲名]）</td><td class="mv">特写手部拌曲动作（从左到右）</td><td class="dur">5–8s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">4</td><td>落缸</td><td class="mv">固定中景，饭入缸</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">5</td><td>师傅探温/闻缸手部</td><td class="mv">特写手部＋鼻近缸，从手推到缸</td><td class="dur">5–8s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">6</td><td>发酵缸</td><td class="mv">固定中景排缸，横移·左→右</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">7</td><td>压榨出酒</td><td class="mv">特写酒液流出（从上到下）</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">8</td><td>煎酒蒸汽</td><td class="mv">侧拍蒸汽（从下到上）</td><td class="dur">3–5s</td></tr>
+</table>
+
+<div class="cat-h"><span class="em">🏺</span> 四、酒库储藏（主要服务 #4 / #10 / #11）</div>
+<table class="mat">
+  <tr><th class="cb">☐</th><th class="seq">序</th><th>素材项（拍什么）</th><th>怎么拍（机位运动方向）</th><th class="dur">时长</th></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">1</td><td>陶坛一排排横移（展规模）</td><td class="mv">横移·左→右</td><td class="dur">6–10s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">2</td><td>封泥细节</td><td class="mv">特写封泥，从上到下扫</td><td class="dur">3–5s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">3</td><td>年份标特写（1年/3年/[X]年）</td><td class="mv">从左到右逐排指过</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">4</td><td>出镜人敲坛听声</td><td class="mv">固定中近景，手敲动作</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">5</td><td>坛间走动中景</td><td class="mv">跟拍（从后往前跟）</td><td class="dur">5–8s</td></tr>
+</table>
+
+<div class="cat-h"><span class="em">🍶</span> 五、产品与餐桌（主要服务 #5 / #6 / #8 / #9）</div>
+<table class="mat">
+  <tr><th class="cb">☐</th><th class="seq">序</th><th>素材项（拍什么）</th><th>怎么拍（机位运动方向）</th><th class="dur">时长</th></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">1</td><td>自饮款正背标（配料/度数/容量）</td><td class="mv">固定特写，标签转向镜头（从左到右扫读）</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">2</td><td>礼盒款外盒+内含</td><td class="mv">俯拍开盒（从上到下）</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">3</td><td>温酒砂锅冒热气</td><td class="mv">俯拍/侧拍热气（从下到上）</td><td class="dur">3–5s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">4</td><td>倒酒入杯</td><td class="mv">固定侧拍酒线（从上到下）</td><td class="dur">3–5s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">5</td><td>酒搭西北硬菜（[菜名1/2/3]）</td><td class="mv">俯拍整桌（从左到右扫）</td><td class="dur">5–8s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">6</td><td>举杯/家人举杯</td><td class="mv">固定中景</td><td class="dur">3–5s</td></tr>
+</table>
+
+<div class="cat-h"><span class="em">🧑</span> 六、人物与场景（服务全部 11 条）</div>
+<table class="mat">
+  <tr><th class="cb">☐</th><th class="seq">序</th><th>素材项（拍什么）</th><th>怎么拍（机位运动方向）</th><th class="dur">时长</th></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">1</td><td>厂门/厂牌（含「五山池酒业」）</td><td class="mv">固定中景，从招牌推近到人物走出（从下到上/推近）</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">2</td><td>出镜人走出来/走动中景</td><td class="mv">跟拍（从远到近）</td><td class="dur">4–6s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">3</td><td>[老师傅姓名] 抓米/闻缸/一闻点头</td><td class="mv">固定中近景</td><td class="dur">5–8s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">4</td><td>老照片/老账本（如有）</td><td class="mv">特写翻页（从左到右）</td><td class="dur">3–5s</td></tr>
+  <tr><td class="cb"><span class="it"></span></td><td class="seq">5</td><td>发货箱堆（复购佐证）</td><td class="mv">横移·左→右</td><td class="dur">4–6s</td></tr>
+</table>
+
+<h3>2.2 需要厂方确认并准备的真实信息（到厂问清，口播填入）</h3>
+<div class="prep">
+  <div class="c"><h4>📋 属于"厂"的事实</h4>
+    <ul>
+      <li><b>四十年</b>：主页简介自述，已按此口径写入 #2；<b>[具体建厂 / 开始酿酒年份]</b> 到厂核对
+      （用于 #2、#10）</li>
+      <li><b>门头字已确认</b>：厂门楼上就是「五山池酒业」，全片可直接露；账号名「甘肃五山池酒业销售有限公司 企业店」
+      与执照全称按现场核对</li>
+      <li><b>山泉水已确认</b>：主页明写「山泉水」。仍需 <b>[具体山名 / 泉名 / 产地村名]</b>（#3、#5、#11）</li>
+      <li><b>[曲名]</b>：所用酒曲名称（#4）</li>
+      <li><b>[各档存期]</b>：陶坛存 1 年 / 3 年 / [X] 年对应说明（#4、#11）</li>
+      <li><b>[真实困难事件]</b>：四十年里一个真实年份+事件，不编（#2）</li>
+      <li><b>[数量]</b>：缸数、坛数（#2、#10，数一遍再报，别估）</li>
+      <li><b>[真实判断标准]</b>：师傅判断发酵到位的那句话（#4，口述原话）</li>
+    </ul>
+  </div>
+  <div class="c"><h4>📋 属于"人"的事实</h4>
+    <ul>
+      <li><b>[出镜人身份]</b>：老板 / 师傅 / 店员，真实称呼（#2/3/4）</li>
+      <li><b>[老师傅姓名 · 年数]</b>：资深师傅真实姓名与从业年数（#2、#4）</li>
+      <li><b>[老师傅原话]</b>：一句真实口头禅/判断语，不代写（#2）</li>
+    </ul>
+  </div>
+  <div class="c"><h4>📋 属于"货"的事实</h4>
+    <ul>
+      <li><b>[自饮款名 · 度数 · 容量 · 价]</b>（#6/8/9/11）</li>
+      <li><b>[礼盒款名 · 配置]</b>（#8）</li>
+      <li><b>[搭配菜名 1/2/3]</b>：真实甘肃硬菜（#6）</li>
+    </ul>
+  </div>
+  <div class="c"><h4>📋 属于"节奏"的事实</h4>
+    <ul>
+      <li><b>[直播时间]</b>：明天具体时段；截图时账号正在直播，可沿用现在的开播时段（#10）</li>
+      <li><b>[后台数据]</b>：近 30 天播放 / 完播 / 涨粉，用来看基线（粉丝 944、作品 50 是公开数）</li>
+      <li><b>[商品与价格]</b>：店铺在售 5 件好物的名称、度数、容量、价格（#8/9/11 要用）</li>
+      <li><b>[真实回购反馈]</b>：1–2 句脱敏老客原话（#9）</li>
+      <li>拍摄当天天气 / 光线窗口（清晨或午后侧光最佳）</li>
+    </ul>
+  </div>
+</div>
+
+<h3>2.3 道具 / 人员 / 设备准备</h3>
+<div class="prep">
+  <div class="c"><h4>📦 道具</h4>
+    <ul>
+      <li>一碗酿造用大黄米（确认干净）、一碗糯米（对比用）</li>
+      <li>两瓶水（山泉水 + 自来水，#5/#11 可选对比）</li>
+      <li>自饮款 + 礼盒款实物、价签</li>
+      <li>砂锅/酒壶（温酒）、2–3 道真实西北菜</li>
+      <li>老照片/老账本（如有）、发货箱</li>
+    </ul>
+  </div>
+  <div class="c"><h4>🧑 人员</h4>
+    <ul>
+      <li>出镜人 1 名（提前练熟该条台词，松弛聊天感）</li>
+      <li>[老师傅姓名] 配合出镜（挑米/探温/闻缸）</li>
+      <li>拍摄 1 名（手机竖屏稳，三脚架+手持跟拍）</li>
+      <li>收音 1 名或领夹麦自戴</li>
+    </ul>
+  </div>
+  <div class="c"><h4>🎬 设备</h4>
+    <ul>
+      <li>手机（1080p/60fps 竖屏）、三脚架、手持稳定</li>
+      <li>领夹麦 / 无线麦</li>
+      <li>补光灯（车间/酒库偏暗处）</li>
+      <li>备用电池、清理镜头布</li>
+    </ul>
+  </div>
+  <div class="c"><h4>⚠️ 现场注意</h4>
+    <ul>
+      <li>生产现场素材不配过大音乐，保留真实操作声</li>
+      <li>产品特写关美颜关重滤镜，标签必须看清</li>
+      <li>人员按车间要求着装，不重复危险操作</li>
+    </ul>
+  </div>
+</div>
+
+<h3>2.4 拍摄流水线日程（按场景一次拍完 · 减少往返）</h3>
+<div class="lead">11 条剧本如果按编号顺序拍，等于在厂里来回跑十几趟：同一条水线要进三次车间、同一排坛子要开三次酒库门。所以当天<b>按场景拍，不按条拍</b>——一个地方站住，把需要这个场景的镜头一次拍完。下面 8 站，走到哪拍到哪，每站收工前对一遍"出自"列打钩。</div>
+<table class="ov">
+  <tr><th>时段</th><th>站点（在哪拍）</th><th>一次拍完的镜头</th><th>出自</th><th>现场提醒</th></tr>
+  <tr><td><b>07:00–08:30</b></td><td><b>① 厂区外景 · 门楼</b></td><td>门楼招牌「五山池酒业」；[山名]远景带晨雾；厂区横移落在老缸上；手掌摸过老缸沿；院子里一排排缸和坛；清晨车间门口的白汽</td><td>#01 #02</td><td>只有这一段有斜射侧光，<b>先拍外景</b>。门楼要拍全字，别只拍半边</td></tr>
+  <tr><td><b>08:30–10:00</b></td><td><b>② 原料仓 / 原料区</b></td><td>大黄米筐抓米对光、颗粒从指缝漏下；大黄米与糯米并排特写；两种米分装两个透明罐；一筐米上秤看数字；把米倒上案子拨开；一颗一颗挑杂质（旁边堆次品）；师傅指尖捏一粒对光；筛子筛米落渣；抓米试干湿、凑近闻；粮袋挂日期牌；三碗米并排（糯米／大黄米／粳米大米）；三种米摊在掌心对比；台面摆开米水缸坛四样</td><td>#01 #03 #05 #07 #11</td><td>米要提前备好干净的；<b>挑杂质要真挑</b>，手部特写别摆拍。三碗米是四条共用的核心道具，别用完就收</td></tr>
+  <tr><td><b>10:00–10:40</b></td><td><b>③ 水源地 / 水线</b></td><td>泉边水流过石缝；捧起一捧水对光晃动；水线沿墙进车间；低头尝一口水点头；一碗水一碗米并排放石台；举一杯水对着光</td><td>#02 #03 #11</td><td>山泉水与实际用水点<b>都要拍到</b>，B 站与车间之间顺路。室外收音留意风噪</td></tr>
+  <tr><td><b>10:40–12:00</b></td><td><b>④ 车间：蒸煮 / 拌曲 / 发酵</b></td><td>灶上蒸米白汽腾起；蒸好的米摊开摊凉；手伸进缸里翻米；米和曲翻拌均匀；发酵缸缸沿冒细泡；师傅蹲下把耳朵贴缸听声；手探进缸探温皱眉闻；缸边温度计特写；老师傅侧脸凑到缸口闻；师傅手部抓米掂量；缸边记录本翻开</td><td>#02 #03 #04 #11</td><td>这是当天最重的一站。<b>记录本、温度计、听缸、探温四个动作要么补拍要么别漏</b>——#02/#04/#11 三条都要用。车间偏暗，补光打在缸沿和手部</td></tr>
+  <tr><td><b>13:30–14:20</b></td><td><b>⑤ 出酒区</b></td><td>酒液从管口流进桶；煎酒灭杂菌蒸汽；接一碗新酒对光看颜色与挂杯</td><td>#04</td><td><b>看有没有当天出酒的档期</b>。没有就只拍蒸馏／管口细节，别硬摆</td></tr>
+  <tr><td><b>14:20–15:30</b></td><td><b>⑥ 酒库 / 坛区</b></td><td>酒库横向扫过一排排陶坛；封泥上的年份刻字；一坛坛排开与坛间窄道；翻看坛上标签与封泥；抹泥封坛；出镜人从坛间走出／走进库深处；敲坛听声；现场开坛舀酒</td><td>#02 #04 #10 #11</td><td><b>尽量别挪坛子</b>。开坛、舀酒、敲坛这三下是 #10 直播的预告片，一次拍全。库里暗，灯要提前架</td></tr>
+  <tr><td><b>15:30–16:40</b></td><td><b>⑦ 品鉴台 / 餐桌</b></td><td>倒酒入杯对窗光看色；喝一口放下；酒壶坐热水盆冒气；手背试壶温；倒酒入杯酒面浮气；两瓶并排比色；手拿两瓶比包装；桌上西北硬菜配一口；夹肉蘸蒜汁；[菜名1/2/3] 特写；夹块肥肉配酒；冬天窗边一家人围坐；掀砂锅盖热气冲镜头</td><td>#01 #05 #06 #07 #11</td><td>硬菜<b>趁热拍</b>，热气是最值钱的画面。比色、比包装要在同一光源下拍，否则看不出差别</td></tr>
+  <tr><td><b>16:40–17:30</b></td><td><b>⑧ 产品与单据 · 桌拍</b></td><td>两款并排摆开；拿起自饮款特写背标指度数；倒一杯推近配料表；翻开礼盒看内衬；两款并排指屏幕打名；手机下单页面；仓库码着的箱子；翻回购记录与留言；翻旧设备照片或合同；仓里码好的酒贴标签；打包贴单；拿一瓶翻背面；手指依次点过四样</td><td>#02 #05 #08 #09 #11</td><td>配料表、度数、价签<b>必须能看清</b>，关美颜关滤镜。发货箱和回购记录提前让仓管留一份</td></tr>
+  <tr><td><b>17:30–18:30</b></td><td><b>⑨ 人物口播 · 集中补录</b></td><td>各条的开头与收口：出镜人站／坐看镜头；出镜人摆手做安全提醒；出镜人摊手笑；老师傅手搭在出镜人肩上；年轻工人缸边搬坛刷洗</td><td>全 11 条</td><td>找个安静房间、人声干净。合计约 20 分钟台词，<b>一次录完不返工</b>。台词念不顺就改成自己的话再录</td></tr>
+</table>
+<div class="src"><b>顺序为什么这么排：</b>①外景只有清晨侧光；②③④是同一片"原料—水—车间"动线，越早拍完越不影响白天生产；⑤⑥要等出酒和酒库档期，放在午饭后；⑦⑧是室内可控光，随时能拍；⑨口播装在最后，等出镜人把厂里走完一遍，讲话反而更顺。<b>总机位时间约 7–8 小时</b>，含吃饭与转场，一个白天能收完。</div>
+<div class="kbox"><b>当天只带三样东西就够：</b>这张日程表、2.1 的素材清单、每条剧本里的"实景拍摄镜头表"。拍完一站，先在"出自"列勾掉，再走下一站。<b>素材宁可多拍几条，回来剪的时候再挑</b>——同一场景回头补拍的成本，比多按十次快门高得多。</div>
+
+
+<h2>三、11 条完整剧本 v3（点标题展开 · 一句卖点 + 钩子 + 金句 + 封面 + 完整台词 + 镜头表）</h2>
+<div class="kbox"><b>本版重写依据（2026-10-16 全网调研，较 v2 的七处升级）：</b>① 全条改用 <b>3×15×3 结构</b>——3 秒钩子 → 高密度主体 → 3 秒行动指令；② 前 3 秒流失率约 82%，钩子<b>零铺垫</b>，第一句就是冲突或反常识；③ 每 2–4 秒切一个信息锚点，镜头更碎，<b>单条压到 45″–1′15″</b>，保深度观看率；④ 关键词每条复读 3 次以上：<b>甘肃 · 大黄米 · 四十年</b>；⑤ 身份背书前置，前 15 秒亮明「甘肃四十年黄酒厂」；⑥ 强化「黄酒 ＋ 西北硬菜」场景——「黄酒＋美食」是会稽山、古越龙山验证过的最强心智打法（百城共品全网播放超 1.2 亿）；⑦ 删除一切功效表述，守 2024 酒类直播新规。</div>
+<div class="src"><b>调研来源：</b>有米云《抖音白酒赛道内容策略分析报告》（爆款四段式 / 前三秒钩子排行）；腾讯 ima《白酒营销红宝书》（3×15×3 公式）；中国食品报《黄酒年轻化：有"头回客"，更要有"回头客"》（冰饮 / 气泡 / 调饮黄酒增速 80%，露营场景 +120%）；古越龙山「百城共品」活动复盘（黄酒＋美食场景，全网播放超 1.2 亿）；企匠科技工厂实拍转化数据（工厂实拍比剧情类转化率高 3 倍）。</div>
+
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">01</span> 在甘肃，我们酿一种不一样的黄酒 <span class="tm">成片 1′05″ · 认知</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>用「甘肃不产黄酒」的偏见开场制造冲突，前 15 秒把「甘肃 ＋ 大黄米 ＋ 四十年」三个记忆点一次钉进去。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「甘肃不产黄酒？我在这儿酿了四十年。」</div>
+  <div class="gold">💡 本集金句：黄酒不该只有一种味道。西北的水土，养得出另一口酒。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①甘肃不产黄酒？ ②这碗酒，是甘肃酿的 ③大黄米酿的，喝过吗</div>
+  <h4>完整脚本文案（口播 220 字 · 读下来约 0′45″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：出镜人端一碗酒站厂门口]</span>甘肃不产黄酒？我在这儿酿了四十年。</p>
+    <p><span class="sd">[画面：招牌「五山池酒业」推近]</span>我是五山池的[出镜人身份]，厂在甘肃[地名]。记住一句话就行：甘肃也有黄酒，是大黄米酿的。</p>
+    <p><span class="sd">[画面：抓一把大黄米对光]</span>南方黄酒用糯米，我们用大黄米——西北人蒸糕、熬粥的那种米。它油性足、香气厚，酿出来颜色更深，口感更沉。</p>
+    <p><span class="sd">[画面：倒酒，琥珀色挂杯]</span>看这颜色，透亮的琥珀色，是大黄米给的本色，没加任何调色的东西。</p>
+    <p><span class="sd">[画面：车间蒸汽、缸区快切]</span>山泉水、老缸、非遗工艺——这些不是卖点，是我们厂每天正在干的事。后面我一条一条拍给你看。</p>
+    <p><span class="sd">[画面：出镜人正视镜头]</span>我不跟绍兴比高低。黄酒不该只有一种味道，西北的水土，养得出另一口酒。</p>
+    <p><span class="sd">[画面：举杯收尾]</span>头一回听说甘肃产黄酒的，评论区扣个「甘肃」，我看看有多少老乡。下条，带你进车间。</p>
+  </div>
+  <h4>实景拍摄镜头表（8 镜 · 秒数累加＝成片 1′05″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>厂门口 + 原料案前</div>
+    <div><b>🧑 人物</b>出镜人</div>
+    <div><b>🎥 机位</b>手持中景开场，米特写，厂区横移</div>
+    <div><b>📦 道具</b>一碗酒、大黄米、招牌</div>
+    <div><b>💡 光/声</b>清晨侧光；保留倒酒原声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>出镜人举碗站厂门口</td><td>甘肃不产黄酒？我酿了四十年</td><td>8</td></tr>
+    <tr><td>2</td><td>招牌推近</td><td>甘肃也有黄酒，是大黄米酿的</td><td>9</td></tr>
+    <tr><td>3</td><td>抓米对光</td><td>大黄米油性足、香气厚</td><td>10</td></tr>
+    <tr><td>4</td><td>倒酒挂杯</td><td>琥珀色是米给的本色</td><td>8</td></tr>
+    <tr><td>5</td><td>车间蒸汽快切</td><td>每天正在干的事，一条条拍</td><td>8</td></tr>
+    <tr><td>6</td><td>正视镜头</td><td>黄酒不该只有一种味道</td><td>9</td></tr>
+    <tr><td>7</td><td>举杯</td><td>评论区扣个「甘肃」</td><td>8</td></tr>
+    <tr><td>8</td><td>字幕卡：甘肃·大黄米·四十年</td><td>下条带你进车间</td><td>5</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">02</span> 这家厂，四十年只守着一口酒 <span class="tm">成片 1′15″ · 人设</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>冲突开场立人设：有人劝卖厂转行，老板没动。四十年、真事件、师傅原话，把「老实人」钉死。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「有人劝我把厂卖了改做白酒，我说我只会酿这个。」</div>
+  <div class="gold">💡 本集金句：酒不是机器吐出来的，是人一年一年守出来的。人散了，味就没了。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①四十年，只守一口酒 ②劝我卖厂的人，走了 ③这口缸比我岁数大</div>
+  <h4>完整脚本文案（口播 325 字 · 读下来约 1′06″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：出镜人手搭缸沿]</span>有人劝我把厂卖了改做白酒，我说我只会酿这个。</p>
+    <p><span class="sd">[画面：厂区横移，一排排缸和坛]</span>这院子一共[数量]口缸，最老那批是我爹那辈留下来的，四十年了，还在用。旁边几个厂，改白酒的、做保健酒的、卖厂的都有，我们没动。</p>
+    <p><span class="sd">[画面：蹲在缸边]</span>不是看得远，是只会干这个。大黄米、山泉水、这一院子的缸，换掉哪一样，出来的都不是这个味。</p>
+    <p><span class="sd">[画面：清晨车间，白汽从门口冒出来]</span>我一天在厂里走三遍：早上看缸，中午对温度，下午转酒库。温度差两度，这一缸的走向就变了。</p>
+    <p><span class="sd">[画面：翻老照片、老账本]</span>说没动摇过是假的。最难那年，[真实困难事件]，有人劝我灌一批新酒、标个年份出手。我在缸边坐了一夜，没灌。这行骗一次，往后十年都补不回来。</p>
+    <p><span class="sd">[画面：老师傅侧脸]</span>[老师傅姓名]师傅跟我说过一句话，我记到今天：[老师傅原话]。酒不是机器吐出来的，是人一年一年守出来的。人散了，味就没了。</p>
+    <p><span class="sd">[画面：酒库横移，扫过最早那排坛]</span>我们一年出多少酒，不看订单，看库里有多少够年头的。够的少，就少卖。卖完了，就是没了。</p>
+    <p><span class="sd">[画面：出镜人站厂门口]</span>四十年，甘肃这一家厂，就守这一口大黄米黄酒。路过[地名]，进厂坐坐，我带你从米一路看到坛。</p>
+  </div>
+  <h4>实景拍摄镜头表（8 镜 · 秒数累加＝成片 1′15″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>缸区 + 酒库 + 厂门口</div>
+    <div><b>🧑 人物</b>出镜人、老师傅</div>
+    <div><b>🎥 机位</b>缸沿特写、厂区横移、酒库横移</div>
+    <div><b>📦 道具</b>老照片/老账本、记录本</div>
+    <div><b>💡 光/声</b>室内自然光；保留缸区环境声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>手搭缸沿特写</td><td>劝我卖厂改白酒，我没动</td><td>9</td></tr>
+    <tr><td>2</td><td>厂区缸坛横移</td><td>[数量]口缸，四十年还在用</td><td>10</td></tr>
+    <tr><td>3</td><td>蹲缸边中景</td><td>换掉哪样都不是这个味</td><td>9</td></tr>
+    <tr><td>4</td><td>清晨车间白汽</td><td>一天走三遍，差两度走向就变</td><td>9</td></tr>
+    <tr><td>5</td><td>老照片/账本特写</td><td>最难那年没灌新酒</td><td>12</td></tr>
+    <tr><td>6</td><td>老师傅侧脸</td><td>[老师傅原话]</td><td>11</td></tr>
+    <tr><td>7</td><td>酒库坛区横移</td><td>够年头的少，就少卖</td><td>8</td></tr>
+    <tr><td>8</td><td>厂门口中景</td><td>四十年就守这一口酒</td><td>7</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">03</span> 一粒霉米毁一缸酒：米和水的讲究 <span class="tm">成片 1′10″ · 探厂上</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>反常识开场：一粒霉米毁几百斤酒。把挑米、测水、退粮三个动作拍成「看得见的干净」。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「一粒霉米，能毁掉几百斤酒。」</div>
+  <div class="gold">💡 本集金句：米和水要是错了，后面师傅本事再大，也救不回来。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①一粒霉米毁一缸酒 ②挑米挑到眼花 ③不达标？整车退</div>
+  <h4>完整脚本文案（口播 312 字 · 读下来约 1′04″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：捏起一粒霉米特写]</span>一粒霉米，能毁掉几百斤酒。今天带你看，好酒在进缸之前是怎么定的。</p>
+    <p><span class="sd">[画面：一筐米倒上案子，手拨开]</span>这是今年到场的大黄米。刚送来的时候其实不能看——瘪粒、石子、碎壳，赶上雨天收的，还有发霉的粒。</p>
+    <p><span class="sd">[画面：手指一颗一颗挑杂质，旁边一堆次品]</span>所以第一道关是挑。一缸几十斤米，混进一粒霉的，整缸味就偏了，几百斤全废。这活急不得，得一颗一颗过。</p>
+    <p><span class="sd">[画面：师傅捏起一粒对光看]</span>老师傅的标准就三样：粒要饱满，脐要白净，不能有虫眼。图省事不分，出来的酒发浑、带邪味，一喝就露馅。</p>
+    <p><span class="sd">[画面：测水分、粮袋挂牌]</span>米还得够干。水分高了进仓返潮发热，酿出来发酸。我们的米到场先测水分，不达标整车退回去。去年就退过一车，粮商跟我急，我还是没收。</p>
+    <p><span class="sd">[画面：水源地，捧起一捧水]</span>再说水。黄酒里八成是水。我们用的是[山名/泉名]的山泉水，一年四季水温差不了几度——水温稳，缸里的发酵就稳。</p>
+    <p><span class="sd">[画面：捧水对光，轻轻晃碗]</span>有一回山里下大雨，水浑了，那几天我们宁可停酿，也不凑合用。米和水要是错了，师傅本事再大也救不回来。</p>
+    <p><span class="sd">[画面：一碗水一碗米并排]</span>这是五山池四十年的第一道关。下一条，讲酿和存。</p>
+  </div>
+  <h4>实景拍摄镜头表（8 镜 · 秒数累加＝成片 1′10″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>原料仓 + 水源边</div>
+    <div><b>🧑 人物</b>出镜人，可邀挑米师傅入镜</div>
+    <div><b>🎥 机位</b>蹲姿特写抓米对光、中景走线、水源捧水</div>
+    <div><b>📦 道具</b>大黄米堆、次品堆、筛子、水碗</div>
+    <div><b>💡 光/声</b>户外自然光；保留水流/筛米原声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>霉米特写</td><td>一粒霉米毁几百斤酒</td><td>8</td></tr>
+    <tr><td>2</td><td>米倒案拨开</td><td>刚到场的米不能看</td><td>9</td></tr>
+    <tr><td>3</td><td>挑杂质特写</td><td>一粒霉的，整缸味就偏</td><td>10</td></tr>
+    <tr><td>4</td><td>师傅捏米对光</td><td>粒饱满、脐白净、无虫眼</td><td>10</td></tr>
+    <tr><td>5</td><td>测水分、退粮</td><td>不达标整车退</td><td>10</td></tr>
+    <tr><td>6</td><td>水源地捧水</td><td>[山名/泉名]山泉水</td><td>9</td></tr>
+    <tr><td>7</td><td>捧水对光晃碗</td><td>水浑了宁可停酿</td><td>9</td></tr>
+    <tr><td>8</td><td>米碗水碗并排</td><td>下条讲酿和存</td><td>5</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">04</span> 一杯酒要走[X]年：酿和存的门道 <span class="tm">成片 1′10″ · 探厂下</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>数字开场：一杯酒最快[X]年。把「慢」拆成蒸、凉、拌曲、落缸、看缸、进坛六个可视化动作。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「从一粒米到你喝到这口酒，最快也要[X]年。」</div>
+  <div class="gold">💡 本集金句：快出来的酒满大街都是，慢出来的，不多了。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①一杯酒要走[X]年 ②酒是等出来的 ③这坛封了[年数]年</div>
+  <h4>完整脚本文案（口播 305 字 · 读下来约 1′02″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：开一坛，舀一勺对光]</span>从一粒米到你喝到这口酒，最快也要[X]年。这条带你看完，五山池四十年的手艺到底慢在哪。</p>
+    <p><span class="sd">[画面：灶上蒸米，白汽腾起来]</span>米淘好上灶蒸。蒸不透，发酵起不来；蒸过了，米烂成一团。火候全靠人盯着。</p>
+    <p><span class="sd">[画面：蒸好的米摊开摊凉]</span>蒸好摊开降温，降到合适的温度才拌曲。快一度慢一度，出来的酒都不一样。</p>
+    <p><span class="sd">[画面：拌曲特写]</span>曲是[曲名]，我们自己做的。曲是酒的骨头，骨架正了，酒才立得住。</p>
+    <p><span class="sd">[画面：拌好落缸，封缸口]</span>拌好落缸，缸口封上，剩下的交给时间和师傅。接下来几十天，师傅每天看缸、测温、听声。</p>
+    <p><span class="sd">[画面：师傅凑缸口闻、探温]</span>发酵到没到位，他有他的法子：[真实判断标准]。这套东西仪器测不出来，是几十年缸边站出来的。</p>
+    <p><span class="sd">[画面：缸边记录本翻页]</span>缸边这本记录，从[年份]年记到今天。哪一缸哪天进的米、用的哪批粮，翻开都查得到。</p>
+    <p><span class="sd">[画面：酒库横移，最里那排坛]</span>出酒还不能卖，要进坛存。库里[数量]坛，最久那排存了[年数]年。头两年最躁，往后才慢慢沉下来，颜色变深，味儿变厚。</p>
+    <p><span class="sd">[画面：倒酒挂杯收尾]</span>快出来的酒满大街都是，慢出来的，不多了。下一条，聊聊我们跟绍兴黄酒到底差在哪。</p>
+  </div>
+  <h4>实景拍摄镜头表（9 镜 · 秒数累加＝成片 1′10″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>蒸煮间 + 发酵缸区 + 酒库</div>
+    <div><b>🧑 人物</b>出镜人、老师傅</div>
+    <div><b>🎥 机位</b>蒸汽逆光、拌曲特写、酒库横移</div>
+    <div><b>📦 道具</b>曲、记录本、坛、舀酒勺</div>
+    <div><b>💡 光/声</b>车间蒸汽逆光；保留蒸汽与舀酒原声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>开坛舀酒对光</td><td>最快也要[X]年</td><td>9</td></tr>
+    <tr><td>2</td><td>蒸米白汽逆光</td><td>火候全靠人盯</td><td>7</td></tr>
+    <tr><td>3</td><td>摊凉翻米</td><td>快一度慢一度都不一样</td><td>7</td></tr>
+    <tr><td>4</td><td>拌曲特写</td><td>曲是[曲名]，酒的骨头</td><td>8</td></tr>
+    <tr><td>5</td><td>落缸封口</td><td>交给时间和师傅</td><td>7</td></tr>
+    <tr><td>6</td><td>师傅闻缸探温</td><td>[真实判断标准]</td><td>10</td></tr>
+    <tr><td>7</td><td>记录本翻页</td><td>从[年份]年记到今天</td><td>7</td></tr>
+    <tr><td>8</td><td>酒库横移</td><td>最久那排存了[年数]年</td><td>9</td></tr>
+    <tr><td>9</td><td>倒酒挂杯</td><td>慢出来的不多了</td><td>6</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">05</span> 跟绍兴黄酒比，我们差在哪、好在哪 <span class="tm">成片 1′05″ · 对比</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>反预期开场：先说三个「不如人家的」，再反转到根上的差异——糯米与大黄米，名气溢价与实在价格。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「跟绍兴黄酒比？我先说三个我们不如人家的。」</div>
+  <div class="gold">💡 本集金句：名气是买来的，味道是做出来的。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①先说三个不如人家的 ②糯米和大黄米，两种黄酒 ③不踩绍兴，实话实说</div>
+  <h4>完整脚本文案（口播 284 字 · 读下来约 0′58″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：两瓶酒并排放在桌上]</span>总有人问：你们的酒跟绍兴黄酒比，哪个好？我先说三个我们不如人家的。</p>
+    <p><span class="sd">[画面：绍兴酒道具特写]</span>第一，人家几百年牌子，我们没有。第二，人家全国都买得到，很多人没听过我们。第三，人家工艺成熟稳定。这些我们认，不装。</p>
+    <p><span class="sd">[画面：大黄米特写]</span>但有一样不一样，在根上：他们用糯米，我们用大黄米。糯米出绵软，大黄米出厚实——我们的酒颜色更深、入口更沉，喝完嘴里那层粮食香，散得慢。</p>
+    <p><span class="sd">[画面：两杯酒倒进杯里，颜色对比]</span>打个比方：绍兴酒像江南的细雨，我们这口像西北的日头。不是一个路数，比不出输赢，只看适不适合你。</p>
+    <p><span class="sd">[画面：一边大闸蟹，一边手抓羊肉]</span>他们配大闸蟹，我们配手抓羊肉。酒跟菜是互相长出来的，离开自己的水土，都不是那个意思。</p>
+    <p><span class="sd">[画面：配料表怼镜头]</span>还有句实在话：我们没有几百年的品牌溢价，同样的年份，价格实在得多。配料表，敢怼着镜头拍。</p>
+    <p><span class="sd">[画面：举杯]</span>名气是买来的，味道是做出来的。想先试试的，拍[自饮款名]，几十块钱一瓶，喝完再下结论。</p>
+  </div>
+  <h4>实景拍摄镜头表（7 镜 · 秒数累加＝成片 1′05″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>品鉴台</div>
+    <div><b>🧑 人物</b>出镜人</div>
+    <div><b>🎥 机位</b>双瓶对比固定机位、倒酒特写</div>
+    <div><b>📦 道具</b>绍兴酒一瓶（道具）、两款自家酒、两只杯</div>
+    <div><b>💡 光/声</b>室内柔光；保留倒酒声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>两瓶并排</td><td>先说三个不如人家的</td><td>8</td></tr>
+    <tr><td>2</td><td>绍兴酒特写</td><td>人家的好，先认</td><td>11</td></tr>
+    <tr><td>3</td><td>大黄米特写</td><td>根上的差别：糯米与大黄米</td><td>11</td></tr>
+    <tr><td>4</td><td>两杯颜色对比</td><td>江南细雨与西北日头</td><td>9</td></tr>
+    <tr><td>5</td><td>蟹与羊肉并排</td><td>酒跟菜互相长出来的</td><td>7</td></tr>
+    <tr><td>6</td><td>配料表怼拍</td><td>敢怼着镜头拍</td><td>10</td></tr>
+    <tr><td>7</td><td>举杯</td><td>先拍[自饮款名]试试</td><td>9</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">06</span> 黄酒直接喝，你浪费了一半 <span class="tm">成片 55″ · 佐餐</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>痛点开场：直接喝＝浪费一半。温酒三讲究＋三道西北硬菜，把黄酒钉进「冬天过日子」的饭桌场景。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「黄酒直接喝，你浪费了一半。」</div>
+  <div class="gold">💡 本集金句：吃的是肉，喝的是酒，暖的是人。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①黄酒温着喝才对 ②手抓羊肉配黄酒 ③西北人冬天这一壶</div>
+  <h4>完整脚本文案（口播 223 字 · 读下来约 0′46″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：酒壶坐进热水盆]</span>黄酒直接喝，你浪费了一半。西北的讲究是：肉要趁热，酒要温着。</p>
+    <p><span class="sd">[画面：倒酒进温壶特写]</span>水温别烫手，五十来度，酒下去三分钟，香气就开了。烫过了头，香气跑了，只剩辣。</p>
+    <p><span class="sd">[画面：杯中酒冒热气，手摸杯壁]</span>温到啥程度？杯壁挂一层薄雾，手摸上去温而不烫，就对了。味杂的酒一温就露馅，好酒越温越顺——家里的酒敢不敢温，一试就知道。</p>
+    <p><span class="sd">[画面：手抓羊肉上桌]</span>头一道，手抓羊肉。羊肉肥，黄酒厚，一口肉一口酒，腻味全解了。</p>
+    <p><span class="sd">[画面：[菜名1]、[菜名2]上桌]</span>再来[菜名1]、[菜名2]。酸辣的提鲜，酒压燥——这酒本来就是配着西北的菜长出来的。</p>
+    <p><span class="sd">[画面：一桌人碰杯]</span>黄酒十几度，一桌人都能喝两杯。冬天这一顿，吃的是肉，喝的是酒，暖的是人。</p>
+    <p><span class="sd">[画面：温壶冒气收尾]</span>天热还有另一套喝法，改天单拍一条。你家冬天温酒配什么菜？评论区说说。</p>
+  </div>
+  <h4>实景拍摄镜头表（7 镜 · 秒数累加＝成片 0′55″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>品鉴馆餐桌/家里灶台</div>
+    <div><b>🧑 人物</b>出镜人 + 家人/朋友 2-3 人</div>
+    <div><b>🎥 机位</b>菜品俯拍、温壶特写、碰杯中景</div>
+    <div><b>📦 道具</b>温酒壶、热水盆、手抓羊肉、[菜名1]、[菜名2]</div>
+    <div><b>💡 光/声</b>暖色灯光；保留碰杯与席间人声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>酒壶坐热水盆</td><td>直接喝浪费一半</td><td>8</td></tr>
+    <tr><td>2</td><td>倒酒进温壶</td><td>五十来度，三分钟香开</td><td>8</td></tr>
+    <tr><td>3</td><td>杯壁挂薄雾</td><td>好酒越温越顺</td><td>9</td></tr>
+    <tr><td>4</td><td>手抓羊肉特写</td><td>一口肉一口酒</td><td>7</td></tr>
+    <tr><td>5</td><td>[菜名1][菜名2]上桌</td><td>配着西北菜长出来的</td><td>8</td></tr>
+    <tr><td>6</td><td>碰杯中景</td><td>暖的是人</td><td>8</td></tr>
+    <tr><td>7</td><td>温壶冒气</td><td>你家配什么菜？</td><td>7</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">07</span> 《诗经》里的米，酿成了这碗酒 <span class="tm">成片 55″ · 科普</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>文化钩子＋双碗对比：大黄米三千年历史只产北方旱地，把「米都没有」打成谁也抄不走的稀缺性。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「《诗经》里种了三千年的米，如今只有北方旱地还有。」</div>
+  <div class="gold">💡 本集金句：南方酿不了这个酒——不是手艺问题，是米都没有。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①《诗经》里的米酿成酒 ②大黄米也能酿黄酒？ ③这颜色是米给的</div>
+  <h4>完整脚本文案（口播 242 字 · 读下来约 0′49″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：两碗米并排放在案上]</span>《诗经》里「彼黍离离」说的黍子，就是右边这碗大黄米——种了三千年的米，如今只有北方旱地还有。</p>
+    <p><span class="sd">[画面：糯米特写]</span>左边是糯米，淀粉细，酿出来绵软甜润，绍兴酒走的就是这条路。</p>
+    <p><span class="sd">[画面：大黄米特写]</span>右边大黄米，淀粉更粗，蛋白和脂肪都比糯米高，酿出来香气厚、颜色深、酒体沉。</p>
+    <p><span class="sd">[画面：两杯酒并排，颜色对比]</span>杯子里最直观：糯米酒浅，黄米酒深。这透亮的琥珀色是米的本色，没加任何调色的东西。</p>
+    <p><span class="sd">[画面：出镜人喝一口]</span>口感上，糯米酒像丝绸，滑；黄米酒像棉布，厚。收口那一点苦底，是大黄米的记号，也是老客最认的一口。</p>
+    <p><span class="sd">[画面：黍子田素材或图片]</span>大黄米耐寒耐旱，只长在北方旱地。南方酿不了这个酒——不是手艺问题，是米都没有。</p>
+    <p><span class="sd">[画面：举杯收尾]</span>想喝大黄米酿的黄酒，只能找西北的厂。甘肃五山池，四十年就酿这一种。下条教你，买我们的酒怎么挑。</p>
+  </div>
+  <h4>实景拍摄镜头表（7 镜 · 秒数累加＝成片 0′55″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>原料案 + 品鉴台</div>
+    <div><b>🧑 人物</b>出镜人</div>
+    <div><b>🎥 机位</b>两碗米俯拍、两杯酒对比特写</div>
+    <div><b>📦 道具</b>糯米一碗、大黄米一碗、两杯酒</div>
+    <div><b>💡 光/声</b>室内柔光；倒酒原声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>两碗米并排</td><td>《诗经》里的黍子</td><td>10</td></tr>
+    <tr><td>2</td><td>糯米特写</td><td>糯米出绵软</td><td>7</td></tr>
+    <tr><td>3</td><td>大黄米特写</td><td>大黄米出厚实</td><td>9</td></tr>
+    <tr><td>4</td><td>两杯酒颜色对比</td><td>琥珀色是米本色</td><td>8</td></tr>
+    <tr><td>5</td><td>喝一口</td><td>丝绸与棉布，那点苦底</td><td>10</td></tr>
+    <tr><td>6</td><td>黍子田空镜</td><td>南方的旱地没有这米</td><td>7</td></tr>
+    <tr><td>7</td><td>举杯</td><td>四十年就酿这一种</td><td>4</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">08</span> 买我们家酒，认准这两款就够 <span class="tm">成片 55″ · 转化</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>差评反转开场，接着按用途给答案：自饮一款、送人一款。配料表怼镜头，年份价格都说实在话。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「有人说我们包装土。对——钱花在酒里了。」</div>
+  <div class="gold">💡 本集金句：配料表敢怼着镜头拍的酒，才买得放心。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①包装土，酒不土 ②自饮这款，送人那款 ③买黄酒先翻配料表</div>
+  <h4>完整脚本文案（口播 261 字 · 读下来约 0′53″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：两款酒并排]</span>有人留言说我们的包装土。对，钱花在酒里了。今天把两款酒说明白，看完就知道拍哪个。</p>
+    <p><span class="sd">[画面：自饮款拿在手里]</span>自己喝，拍这个——[自饮款名]，[度数]度，[容量]，[价]。就是厂里天天出的那款，配料表排第一的是大黄米，后面干干净净。</p>
+    <p><span class="sd">[画面：配料表特写，手指逐行点]</span>买黄酒先翻配料表，这是最简单的法子：有焦糖色、有香精的，先放回去。我们的配料表，敢怼着镜头拍。</p>
+    <p><span class="sd">[画面：温一杯喝一口]</span>买回去怎么喝也告诉你：天冷温着喝，天热常温就行。开瓶没喝完，塞紧放阴凉处，一周内喝完。</p>
+    <p><span class="sd">[画面：礼盒款打开]</span>送人，拍[礼盒款名]，[配置]。包装不花哨，但不会撞款——甘肃出来的大黄米黄酒，送的就是一个稀罕和实在。</p>
+    <p><span class="sd">[画面：酒库存酒横移]</span>年份写在瓶身上，是多少就是多少。四十年的厂，就靠这两个字活着。</p>
+    <p><span class="sd">[画面：两款并排收尾]</span>就这两款。自饮的实在，送人的体面。店铺里都有，点下方链接直接拍。喝完觉得行，回来告诉我一声。</p>
+  </div>
+  <h4>实景拍摄镜头表（7 镜 · 秒数累加＝成片 0′55″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>产品桌 + 酒库</div>
+    <div><b>🧑 人物</b>出镜人</div>
+    <div><b>🎥 机位</b>产品特写、配料表怼拍、礼盒打开</div>
+    <div><b>📦 道具</b>自饮款、礼盒款、手机（店铺页）</div>
+    <div><b>💡 光/声</b>室内柔光；清晰人声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>两款并排</td><td>包装土？钱花在了酒里</td><td>8</td></tr>
+    <tr><td>2</td><td>自饮款手持</td><td>[自饮款名] [价]</td><td>9</td></tr>
+    <tr><td>3</td><td>配料表怼拍</td><td>敢怼着镜头拍</td><td>9</td></tr>
+    <tr><td>4</td><td>温一杯喝</td><td>天冷温着喝</td><td>7</td></tr>
+    <tr><td>5</td><td>礼盒打开</td><td>不撞款的礼盒</td><td>8</td></tr>
+    <tr><td>6</td><td>酒库横移</td><td>年份写在瓶身上</td><td>8</td></tr>
+    <tr><td>7</td><td>两款并排</td><td>点下方链接直接拍</td><td>6</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">09</span> 为什么有人一箱箱往回搬 <span class="tm">成片 50″ · 口碑</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>老客行为当证据：一次搬几箱、留言原话、外地老乡寄着喝。全程只说口感与场景，不碰功效。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「有个老客一次搬走[X]箱，说：不是喝，是怕你们没了。」</div>
+  <div class="gold">💡 本集金句：你喝完的那一口，就是我们全部的广告。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①为什么一箱箱往回搬 ②喝顺了就回不去 ③老客说了算</div>
+  <h4>完整脚本文案（口播 251 字 · 读下来约 0′51″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：仓库里搬箱装车]</span>上个月有个老客，一次搬走[X]箱。我问他喝得了吗，他说：不是喝，是怕你们没了。</p>
+    <p><span class="sd">[画面：发货单、打包]</span>我们的复购不靠广告，靠喝完之后的那个回头。很多人第一次抱着试试的心态买一瓶，第二次就是一箱。</p>
+    <p><span class="sd">[画面：后台留言截图（真实打码）]</span>这是后台的留言，我念一条：[真实回购反馈]。这样的留言，隔几天就有一条。</p>
+    <p><span class="sd">[画面：倒酒入杯]</span>大黄米黄酒这东西，喝顺了就回不去。十几度，米香浓，晚饭倒一小杯，配啥菜都顺。</p>
+    <p><span class="sd">[画面：年轻客人、女客在店里试饮]</span>这两年还有个变化：年轻客人多了，女客也多了。他们说这酒不像白酒那么冲，小酌一杯刚好。</p>
+    <p><span class="sd">[画面：价格牌、货架]</span>我们不做促销，价格一年到头一个样。老客都知道，不用等什么购物节，什么时候来买都一样。</p>
+    <p><span class="sd">[画面：发货收尾]</span>做广告我们不在行，把酒做好我们在行。你喝完的那一口，就是我们全部的广告。第一次来的，先拍一瓶试试。</p>
+  </div>
+  <h4>实景拍摄镜头表（7 镜 · 秒数累加＝成片 0′50″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>仓库 + 品鉴馆</div>
+    <div><b>🧑 人物</b>出镜人（可拍真实老客背影/手部）</div>
+    <div><b>🎥 机位</b>搬箱跟拍、留言截图特写、倒酒特写</div>
+    <div><b>📦 道具</b>发货箱、后台留言截图（打码）、酒杯</div>
+    <div><b>💡 光/声</b>自然光；保留搬箱环境声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>搬箱装车</td><td>一次搬走[X]箱</td><td>8</td></tr>
+    <tr><td>2</td><td>打包发货单</td><td>第一次一瓶，第二次一箱</td><td>7</td></tr>
+    <tr><td>3</td><td>留言截图特写</td><td>[真实回购反馈]</td><td>8</td></tr>
+    <tr><td>4</td><td>倒酒入杯</td><td>喝顺了就回不去</td><td>7</td></tr>
+    <tr><td>5</td><td>年轻客人试饮</td><td>小酌一杯刚好</td><td>7</td></tr>
+    <tr><td>6</td><td>价格牌货架</td><td>不做促销</td><td>6</td></tr>
+    <tr><td>7</td><td>发货收尾</td><td>先拍一瓶试试</td><td>7</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">10</span> 明天下午，当着镜头开一坛 <span class="tm">成片 45″ · 承接</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>直播预告片：第一句就抛「现场开一坛[年数]年的酒」，时间地点三件事说清，评论预约问题。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「明天下午[直播时间]，我当着镜头，开一坛封了[年数]年的酒。」</div>
+  <div class="gold">💡 本集金句：答不上来的，我拉师傅来答。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①明天直播，现场开坛 ②满坛闷声空坛脆 ③这一库坛带你看</div>
+  <h4>完整脚本文案（口播 216 字 · 读下来约 0′44″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：站在酒库门口]</span>明天下午[直播时间]，我当着镜头，开一坛封了[年数]年的酒。</p>
+    <p><span class="sd">[画面：酒库内部横移]</span>平时大家看到的是装好瓶的，明天看没装瓶的：这一库[数量]坛，从门口的新坛走到最里头的老坛，哪年的、存的什么米，一坛一坛讲清楚。</p>
+    <p><span class="sd">[画面：敲坛子]</span>到时候现场敲给你们听：满坛是闷声，空坛是脆的。</p>
+    <p><span class="sd">[画面：舀酒倒出]</span>开坛直接倒出来，看颜色、看挂杯。哪个年份适合现在喝，哪个值得再放两年，一次说清。</p>
+    <p><span class="sd">[画面：装箱画面]</span>直播间再放一批[直播福利款]，只有直播间有，拍完为止。具体多少明天现场说——说多了，怕厂长怪我。</p>
+    <p><span class="sd">[画面：门口收尾]</span>想问什么提前打在评论区：价的、存法的、怎么挑的，明天当面答。答不上来的，我拉师傅来答。点个关注，明天酒库里见。</p>
+  </div>
+  <h4>实景拍摄镜头表（6 镜 · 秒数累加＝成片 0′45″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>酒库</div>
+    <div><b>🧑 人物</b>出镜人</div>
+    <div><b>🎥 机位</b>酒库横移、敲坛特写、门口中景</div>
+    <div><b>📦 道具</b>坛、舀酒勺、杯</div>
+    <div><b>💡 光/声</b>酒库暖光；保留敲坛声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>酒库门口</td><td>明天开一坛[年数]年的</td><td>8</td></tr>
+    <tr><td>2</td><td>酒库横移</td><td>[数量]坛一坛一坛讲</td><td>9</td></tr>
+    <tr><td>3</td><td>敲坛特写</td><td>满坛闷声，空坛脆</td><td>7</td></tr>
+    <tr><td>4</td><td>舀酒倒出</td><td>看颜色看挂杯</td><td>8</td></tr>
+    <tr><td>5</td><td>装箱</td><td>[直播福利款]拍完为止</td><td>6</td></tr>
+    <tr><td>6</td><td>门口收尾</td><td>点个关注，酒库里见</td><td>7</td></tr>
+  </table>
+</div>
+</details>
+<details class="script">
+<summary><span class="ar">▸</span><span class="pn">11</span> 到底什么是好黄酒？认准四样不踩坑 <span class="tm">成片 1′00″ · 科普</span></summary>
+<div class="body">
+  <div class="sell"><b>一句卖点：</b>清单式科普：米、水、工艺、时间四把尺子，结论先行，看完能拿去对照任何一瓶黄酒。</div>
+  <div class="hook">🔥 <b>黄金三秒钩子：</b>「买黄酒怕踩坑？记住四样：米、水、工艺、时间。」</div>
+  <div class="gold">💡 本集金句：牌子是广告堆的，酒是这四样堆的。</div>
+  <div class="cov">🖼 <b>封面标题 3 选：</b>①什么是好黄酒 ②买酒别先看牌子 ③四样凑齐才叫好酒</div>
+  <h4>完整脚本文案（口播 307 字 · 读下来约 1′03″ · 边讲边展示）</h4>
+  <div class="copy">
+    <p><span class="sd">[画面：举杯对光]</span>买黄酒怕踩坑？记住四样：米、水、工艺、时间。一条讲清，以后买酒照着对就行。</p>
+    <p><span class="sd">[画面：配料表特写]</span>第一样，米。配料表排第一的必须是粮食——糯米也好，大黄米也好。排第一是水、是酒精的，那是兑出来的，不叫酿出来的。</p>
+    <p><span class="sd">[画面：水源捧水]</span>第二样，水。黄酒八成是水，好水酿的酒喝着不寡、不涩。我们用的是[山名/泉名]的山泉水，一年四季水温差不了几度，缸里的发酵稳。</p>
+    <p><span class="sd">[画面：车间看缸]</span>第三样，工艺。真发酵的酒要在缸里待几十天，师傅天天看。香精酒闻着冲，倒在杯里晃一晃，香气十分钟就散了；真酒的香是慢慢出来的，喝完杯底还留香。</p>
+    <p><span class="sd">[画面：酒库坛区]</span>第四样，时间。酒得进坛存，头两年最躁，存过几年才沉下来。年份写在瓶身上，是多少就得是多少。</p>
+    <p><span class="sd">[画面：米、水、曲、坛四样并排]</span>米是真的，水是活的，工艺是慢的，时间是够的——四样凑齐，才叫好酒。少一样，都是凑合。</p>
+    <p><span class="sd">[画面：倒酒挂杯收尾]</span>这是我们厂四十年的规矩，也是甘肃大黄米黄酒的底气。牌子是广告堆的，酒是这四样堆的。下条想听什么，评论区告诉我。</p>
+  </div>
+  <h4>实景拍摄镜头表（7 镜 · 秒数累加＝成片 1′00″）</h4>
+  <div class="plan">
+    <div><b>📍 地点</b>原料案 + 水源 + 车间 + 酒库</div>
+    <div><b>🧑 人物</b>出镜人</div>
+    <div><b>🎥 机位</b>四样素材各取特写、挂杯收尾</div>
+    <div><b>📦 道具</b>米、水碗、曲、配料表瓶</div>
+    <div><b>💡 光/声</b>自然光；倒酒原声</div>
+  </div>
+  <table class="shot">
+    <tr><th>镜</th><th>画面 / 动作</th><th>对应台词（节选）</th><th>秒</th></tr>
+    <tr><td>1</td><td>举杯对光</td><td>就四样：米水工艺时间</td><td>8</td></tr>
+    <tr><td>2</td><td>配料表特写</td><td>排第一的必须是粮食</td><td>9</td></tr>
+    <tr><td>3</td><td>水源捧水</td><td>好水不寡不涩</td><td>8</td></tr>
+    <tr><td>4</td><td>车间看缸</td><td>真酒喝完杯底留香</td><td>11</td></tr>
+    <tr><td>5</td><td>酒库坛区</td><td>存过几年才沉下来</td><td>8</td></tr>
+    <tr><td>6</td><td>四样并排</td><td>四样凑齐才叫好酒</td><td>8</td></tr>
+    <tr><td>7</td><td>倒酒挂杯</td><td>四十年的规矩</td><td>8</td></tr>
+  </table>
+</div>
+</details>
+
+<footer>
+  五山池黄酒 · 抖音内容手册 v3（账号调研 + 拍摄清单 + 11 条二次重写剧本）｜ 2026-10-16<br>
+  方括号 [ ] 内为需到厂向厂方确认的真实信息，拍摄当天口播填入即可，无需提前备稿。
+</footer>
+</div>
+</body>
+</html>
